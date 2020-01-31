@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS added by me */
+* {
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.5;
+}
+/* ClearFix */
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+/* For centering text */
+.center-text {
+    text-align: center;
+}
+/* containers */
+.small-container{
+    max-width: 720px;
+    margin: 0 auto; 
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto; 
+    font-family: 'Open Sans', sans-serif;
+}
+.container-med{
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-large{
+    max-width: 1150px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo-image {
+    background: transparent;
+}/* header */
+.nav-header {
+    padding: 24px 0;
+
+}
+.nav-logo {
+    float: left;
+    width: 25%;
+    padding: 8px 0;
+}
+.nav-links {
+    width: 50%;
+    padding: 12px 0;
+    float: left;
+
+}
+.game-link{
+    width: 25%;
+    float: left;
+}
+.nav-links a {
+    font-family: Georgia, sans-serif, serif;
+    text-decoration: none;
+    color:#555555;
+    text-transform: uppercase;
+    margin: 0 24px;
+    padding-left: 20px;
+    padding-right: 12px;
+    border-left: 1px solid #999999;
+}
+.menu-items:hover {
+    color: white;
+}
+.header{
+    text-align: center;
+    font-family: Georgia, sans-serif, serif;
+    background: black; 
+    /*
+    position: fixed;
+    left: 0;
+    top: 0;
+    */
+    background-image: linear-gradient( to top, #171717, #111111, #0e0c0c, #010101 );
+    width: 100%;
+    box-shadow: 0px 20px 12px 0px rgba(0,0,0,0.75);
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;
+
+}
+.padding{
+    padding: 40px 0;
+}
+
+
+.box{
+    width: 30%;
+    background: transparent;
+    margin: 20px auto;
+    float:left;
+    padding: 0 auto;
+}
+.small-icon{
+    width: 60px;
+    height: 32px;
+    background: #CCCCCC;
+    margin: 4px;
+    display: inline-block;
+    box-shadow: -4px -4px 5px 0px rgba(0,0,0,0.75);
+}
+.border-box{
+    
+    box-sizing: border-box;
+    transition: transform .25s;
+}
+.border-box:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.8); 
+    box-shadow: 0 8px 6px -6px black;
+}
+.empty-block{
+    width: 60px;
+    height: 32px;
+    background: #CCCCCC;
+    margin: 4px;
+    display: inline-block;
+    background: transparent;
+}
+.second-section{
+    background: #202223;    
+    padding: 24px;
+    box-shadow: 0px 0px 35px 6px #070808;
+    margin: 6px auto;
+}
+
+.third-section{
+    box-shadow: 0px -14px 9px -4px rgba(0,0,0,0.66), 0px 14px 9px -4px rgba(0,0,0,0.66), -14px 0px 9px -4px rgba(0,0,0,0.66),14px 0px 9px -4px rgba(0,0,0,0.66);
+    background: #202223;
+    border: 6px groove #3F1E21;
+    padding: 2px;
+}
+.forth-section{
+    box-shadow: 0px -14px 9px -4px rgba(0,0,0,0.66), 0px 14px 9px -4px rgba(0,0,0,0.66), -14px 0px 9px -4px rgba(0,0,0,0.66),14px 0px 9px -4px rgba(0,0,0,0.66);
+    background: #202223;
+    border: 4px ridge #252627;
+    padding: 6px 2px;
+}
+
+.col-1-2{
+    width: 30%;
+    float: left;
+}
+.str-heroes{
+    margin-left: 6.5%;
+}
+.hero-attr h2{
+    font-family: Georgia, sans-serif, serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #616363;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 12px 0;
+    padding-right: 20px;
+}
+.img-attr{
+    margin-left:20px;
+    width: 40px;
+    height: 40px;
+}
+.hero-picker{
+    background:black;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.hero-picker h2{
+    font-family: Georgia, sans-serif, serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #c4c0c0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.hero-picker h3{
+
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #939393;
+    text-align: center;
+    padding-bottom: 6px;
+}
+.newHR{
+    background-image: url("../images/centercolbox_hr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1px;
+    margin: 6px 0px;
+}
+.full{
+    background:linear-gradient( to bottom, #171717, #111111, #0e0c0c, #010101 );
+}
+.play-btn{
+    font-family: Georgia, sans-serif, serif;
+    background-color: #111c26;
+    border: 1px solid #336391;
+    height: 40px;
+    width: 200px;
+    color: #4584c3;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-left: 40px;
+    box-shadow: 8px 8px 17px 5px rgba(0,0,0,0.75);
+    position: fixed;
+}
+
+.play-btn:hover{
+    background-color:#9ac9f5; 
+}
+.play-btn a{
+    font-family: Georgia, sans-serif, serif;
+    color: #4584c3;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.full-img{
+    width: 256px;
+    height: 144px;
+    display: block;
+    border-none;
+    margin: 0 auto;
+}
+.trans-bg{
+    background: transparent;
+}
